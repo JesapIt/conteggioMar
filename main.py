@@ -4,8 +4,13 @@ import gspread
 from gspread import Cell
 from datetime import date
 import datetime
+from PIL import Image
 
-st.set_page_config(page_title='Conteggio Ore', page_icon = '🕰️', initial_sidebar_state = 'auto')
+
+
+image = Image.open('jesap.png')
+
+st.set_page_config(page_title='Conteggio Ore', page_icon = image, initial_sidebar_state = 'auto')
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
